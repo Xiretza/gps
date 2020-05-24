@@ -1,8 +1,9 @@
 GPRBUILD=gprbuild
 GPRCLEAN=gprclean
+GPRBUILD_FLAGS=
 
 all default:
-	$(GPRBUILD) -p -Pcli
+	$(GPRBUILD) $(GPRBUILD_FLAGS) -p -Pcli
 
 clean:
-	$(GPRCLEAN) -q -r -Pcli
+	$(GPRCLEAN) $(GPRBUILD_FLAGS) -q -r -Pcli
