@@ -1,6 +1,6 @@
 prefix = @prefix@
-docdir = $(prefix)/share/doc/gnatstudio
-sharedir = $(prefix)/share/gnatstudio
+docdir = $(DESTDIR)$(prefix)/share/doc/gnatstudio
+sharedir = $(DESTDIR)$(prefix)/share/gnatstudio
 
 MKDIR = mkdir -p
 INSTALL = @INSTALL@
