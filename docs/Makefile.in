@@ -12,17 +12,17 @@ all: ug tutorial pg gnatdoc
 static:
 
 pg:
-	make -C programmers_guide html
+	$(MAKE) -C programmers_guide html
 
 ug:
-	make -C users_guide html latexpdf
+	$(MAKE) -C users_guide html latexpdf
 
 gnatdoc:
-	make -C ../gnatdoc/docs/users_guide html latexpdf
+	$(MAKE) -C ../gnatdoc/docs/users_guide html latexpdf
 
 .PHONY: tutorial
 tutorial:
-	make -C tutorial html
+	$(MAKE) -C tutorial html
 
 install:
 	$(MKDIR) $(docdir)
